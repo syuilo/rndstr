@@ -1,0 +1,25 @@
+{
+  "name": "rndstr",
+  "version": "0.0.1",
+  "description": "Generate random colors from a seed",
+  "keywords": [
+    "random",
+		"string",
+		"generator"
+  ],
+  "author": "syuilo",
+  "license": "MIT",
+  "repository": "https://github.com/syuilo/rndstr.git",
+  "bugs": "https://github.com/syuilo/rndstr/issues",
+  "main": "./built/index.js",
+  "typings": "./built/index.d.ts",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-tslint": "5.0.0",
+    "gulp-typescript": "2.13.6",
+    "merge2": "1.0.2",
+    "tslint": "3.11.0",
+    "typescript": "1.8.10"
+  },
+  "private": false
+}
