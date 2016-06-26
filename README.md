@@ -39,7 +39,7 @@ rndstr({seed: 'sakurako'}); // Always kybaq23mek8580s246kjkngupc9zsuyjuqgh6jkbal
 | :--------- | :--------------------- | :------------------------------------ | :--------------------------------------- |
 | **length** | *number*               | The length of your resulting string   | `64`                                     |
 | **chars**  | *string* or *string[]* | The chars you want to include         | `'abcdefghijklmnopqrstuvwxyz0123456789'` |
-| **seed**   | *string*               | The seed value to be used to generate | `null`                                   |
+| **seed**   | *string* or *number*   | The seed value to be used to generate | `null`                                   |
 
 ## On TypeScript
 Type definition are bundled.
