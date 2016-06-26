@@ -11,6 +11,11 @@ Generate random string
 $ npm install rndstr --save
 ```
 
+## Usage
+``` javascript
+rndstr(opts)
+```
+
 ## Example
 ``` javascript
 const rndstr = require('rndstr');
@@ -18,6 +23,10 @@ const rndstr = require('rndstr');
 rndstr(); // ujvb17u5vxgqsh41mgwhlo3lfjrbz1xy2oi9zgxk7vh04r5p3cfc121fo8bkoj2j
 rndstr(); // 9rx8ghughdlihe35l7uzld4f3gvwa0wm0cb21ousiiit7q2uvrixo331zcdkb8kj
 rndstr(); // q1a334oio0t6sc5yqb2yjqmuym22acthfzhsnwrr67orp5hvjkj22r9fiehonly9
+
+rndstr({length: 8, chars: '0123456789'}); // 51048708
+rndstr({length: 8, chars: '0123456789'}); // 80987908
+rndstr({length: 8, chars: '0123456789'}); // 72556885
 ```
 
 ## Options
