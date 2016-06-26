@@ -1,4 +1,4 @@
-rndstr
+rndstr.js
 -------------------------------
 
 [![][npm-badge]][npm-link]
