@@ -23,7 +23,7 @@ rndstr(); // q1a334oio0t6sc5yqb2yjqmuym22acthfzhsnwrr67orp5hvjkj22r9fiehonly9
 ## Options
 | Property   | Type                   | Description                         | Default                                  |
 | :--------- | :--------------------- | :---------------------------------- | :--------------------------------------- |
-| **length** | *number*               | The length of your resulting string | `8`                                      |
+| **length** | *number*               | The length of your resulting string | `64`                                      |
 | **chars**  | *string* or *string[]* | The chars you want to include       | `'abcdefghijklmnopqrstuvwxyz0123456789'` |
 
 ## On TypeScript
