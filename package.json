@@ -4,8 +4,8 @@
   "description": "Generate random string",
   "keywords": [
     "random",
-		"string",
-		"generator"
+    "string",
+    "generator"
   ],
   "author": "syuilo",
   "license": "MIT",
