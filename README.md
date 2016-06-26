@@ -24,16 +24,22 @@ rndstr(); // ujvb17u5vxgqsh41mgwhlo3lfjrbz1xy2oi9zgxk7vh04r5p3cfc121fo8bkoj2j
 rndstr(); // 9rx8ghughdlihe35l7uzld4f3gvwa0wm0cb21ousiiit7q2uvrixo331zcdkb8kj
 rndstr(); // q1a334oio0t6sc5yqb2yjqmuym22acthfzhsnwrr67orp5hvjkj22r9fiehonly9
 
+// === Use custom options ===
 rndstr({length: 8, chars: '0123456789'}); // 51048708
 rndstr({length: 8, chars: '0123456789'}); // 80987908
 rndstr({length: 8, chars: '0123456789'}); // 72556885
+
+// === Specify seed ===
+rndstr({seed: 'himawari'}); // Always m8ucpxibnp98qd8791hv98h1knfdypimztyfo3agu7gj757uyicjdea8wwyrpwab
+rndstr({seed: 'sakurako'}); // Always kybaq23mek8580s246kjkngupc9zsuyjuqgh6jkbale5btvtzssxjn2g6nienuyq
 ```
 
 ## Options
-| Property   | Type                   | Description                         | Default                                  |
-| :--------- | :--------------------- | :---------------------------------- | :--------------------------------------- |
-| **length** | *number*               | The length of your resulting string | `64`                                      |
-| **chars**  | *string* or *string[]* | The chars you want to include       | `'abcdefghijklmnopqrstuvwxyz0123456789'` |
+| Property   | Type                   | Description                           | Default                                  |
+| :--------- | :--------------------- | :------------------------------------ | :--------------------------------------- |
+| **length** | *number*               | The length of your resulting string   | `64`                                     |
+| **chars**  | *string* or *string[]* | The chars you want to include         | `'abcdefghijklmnopqrstuvwxyz0123456789'` |
+| **seed**   | *string*               | The seed value to be used to generate | `null`                                   |
 
 ## On TypeScript
 Type definition are bundled.

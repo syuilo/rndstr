@@ -1,11 +1,15 @@
+import * as seedrandom from 'seedrandom';
+
 type Options = {
 	length?: number;
 	chars?: string | string[];
+	seed?: string;
 };
 
-const defaultOptions = {
+const defaultOptions: Options = {
 	length: 64,
-	chars: 'abcdefghijklmnopqrstuvwxyz0123456789'
+	chars: 'abcdefghijklmnopqrstuvwxyz0123456789',
+	seed: null
 };
 
 const _ = (options?: Options) => {
@@ -16,12 +20,15 @@ const _ = (options?: Options) => {
 		? Array.isArray(opts.chars)
 			? opts.chars
 			: (<string>opts.chars).split('')
-		: defaultOptions.chars.split('');
+		: (<string>defaultOptions.chars).split('');
+	const seed = opts.seed || defaultOptions.seed;
+
+	const random = seed ? seedrandom(seed) : Math.random;
 
 	let str = '';
 
 	for (let i = 0; i < length; i++) {
-		str += chars[Math.floor(Math.random() * chars.length)];
+		str += chars[Math.floor(random() * chars.length)];
 	}
 
 	return str;
