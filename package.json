@@ -15,14 +15,14 @@
   "typings": "./built/index.d.ts",
   "devDependencies": {
     "gulp": "3.9.1",
-    "gulp-tslint": "5.0.0",
-    "gulp-typescript": "2.13.6",
-    "merge2": "1.0.2",
-    "tslint": "3.11.0",
-    "typescript": "1.8.10"
+    "gulp-tslint": "8.1.3",
+    "gulp-typescript": "4.0.2",
+    "merge2": "1.2.2",
+    "tslint": "5.10.0",
+    "typescript": "2.9.2"
   },
   "dependencies": {
-    "rangestr": "0.0.1",
-    "seedrandom": "2.4.2"
+    "rangestr": "2.0.0",
+    "seedrandom": "2.4.3"
   }
 }
